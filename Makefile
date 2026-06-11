@@ -19,7 +19,7 @@ fmt:
 typecheck:
 	poetry run mypy .
 
-check: lint fmt typecheck
+check: lint fmt typecheck test
 
 clean:
 	rm -rf .pytest_cache .mypy_cache .ruff_cache
